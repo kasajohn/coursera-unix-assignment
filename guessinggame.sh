@@ -5,7 +5,7 @@ echo "guess how many files are inside current directory... Type a number and the
 read number
 
 countfiles() {
-	files=$(ls | wc -l)
+	files=$(ls -p | grep -v / | wc -l)
 	echo $files
 }
 
