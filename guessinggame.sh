@@ -16,19 +16,17 @@ do
 		if [[ $number -lt $(countfiles) ]]
 		then
 			echo "the number you guessed is SMALLER than the number of files. Type a number again and press enter"
-			read number
 		elif [[ $number -gt $(countfiles) ]]
 		then
 			echo "the number you guessed is SMALLER than the number of files. Type a number again and press enter"
-			read number
 		else
 			echo "Congratulations you found the number of files inside this directory"
 			exit
 		fi
 	else
-		echo "only numeric characters are allowed"
-		read number
+		echo "only numeric characters are allowed. Type a number and press enter"
 	fi
+	read number
 done
 echo "Congratulations you found the number of files inside this directory"
 
