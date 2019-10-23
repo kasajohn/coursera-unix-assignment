@@ -15,11 +15,11 @@ do
 	then
 		if [[ $number -lt $(countfiles) ]]
 		then
-			echo "the number you guessed is SMALLER than the number of files"
+			echo "the number you guessed is SMALLER than the number of files. Type a number again and press enter"
 			read number
 		elif [[ $number -gt $(countfiles) ]]
 		then
-			echo "the number you guessed is BIGGER than the number of files"
+			echo "the number you guessed is SMALLER than the number of files. Type a number again and press enter"
 			read number
 		else
 			echo "Congratulations you found the number of files inside this directory"
